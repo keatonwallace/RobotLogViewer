@@ -46,7 +46,13 @@ namespace RobotLogViewer
                 using (System.IO.StreamReader reader = new System.IO.StreamReader(fileStream))
                 {
                     // Read the first line from the file and write it the textbox.
-                    richTextBox1.AppendText(reader.ReadLine());
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        richTextBox1.AppendText(line);
+                        richTextBox1.AppendText(System.Environment.NewLine);
+                    }
+                    
                 }
                 fileStream.Close();
             }
