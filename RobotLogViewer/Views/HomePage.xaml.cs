@@ -17,16 +17,17 @@ using System.Windows.Forms;
 //using Microsoft.Win32;
 
 
-namespace RobotLogViewer
+namespace RobotLogViewer.Views
 {
     /// <summary>
     /// Interaction logic for HomePage.xaml
+    /// This logic should be pushed to the Modelview
     /// </summary>
     public partial class HomePage : Page
     {
         public HomePage()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
         private void bOpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
