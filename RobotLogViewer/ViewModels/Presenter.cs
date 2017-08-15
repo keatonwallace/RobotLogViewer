@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotLogViewer.ViewModels
 {
-    class Class1
+    class Presenter
     {
     }
 }
