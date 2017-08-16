@@ -25,11 +25,9 @@
 
 
 
-        <Button x:Name="bOpenFileDialog" Content="Open File"
-                  
-                 Click="bOpenFileDialog_Click" />
+        <Button x:Name="bOpenFileDialog" Content="Open File" Command="{Binding bOpenFileDialog_Click}" />
 
 
-        <RichTextBox Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Stretch" Margin="0,0,0,-254" Name="richTextBox1" ></RichTextBox>
+        <ListBox Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Stretch" Margin="0,0,0,-254" Name="richTextBox1" ItemsSource="{Binding History}"></ListBox>
     </Grid>
 </Page>
