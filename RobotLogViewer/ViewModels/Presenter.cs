@@ -27,6 +27,7 @@ namespace RobotLogViewer.ViewModels
             get { return _history; }
         }
 
+        //This is a comment so that I can complete my daily checkin
         private void bOpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
             // Create an instance of the open file dialog box.
