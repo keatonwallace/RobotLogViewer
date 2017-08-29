@@ -20,16 +20,24 @@ namespace RobotLogViewer.ViewModels
 {
     class Presenter
     {
-        private readonly ObservableCollection<string> _history = new ObservableCollection<string>();
 
-        public IEnumerable<string> History
+        private readonly ObservableCollection<string> _history = new ObservableCollection<string>();
+        public string _someText = "Here is some text";
+
+        public string SomeText
         {
-            get { return _history; }
+            get { return _someText; }
+            set
+            {
+                _someText = value;
+                //RaisePropertyChangedEvent("SomeText");
+            }
         }
+
 
         public void bOpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
-            //do better
+            
             //I don't think the field is being redrawn once the information is there
             _history.Add("something");
             //// Create an instance of the open file dialog box.

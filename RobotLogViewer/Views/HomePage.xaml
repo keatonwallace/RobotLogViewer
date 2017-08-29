@@ -10,24 +10,9 @@
       d:DesignWidth="300"
       Title="HomePage"
       d:DataContext="{d:DesignInstance ViewModels:Presenter}">
-
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-
-
+    <StackPanel Height="336">
         <Button x:Name="bOpenFileDialog" Content="Open File" Command="{Binding bOpenFileDialog_Click}" />
-
-
-        <ListBox Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Stretch" Margin="0,0,0,-254" Name="richTextBox1" ItemsSource="{Binding History}"></ListBox>
-    </Grid>
+        
+        <ListBox ItemsSource="{Binding SomeText}" VerticalContentAlignment="Stretch" Height="296"></ListBox>
+    </StackPanel>
 </Page>
