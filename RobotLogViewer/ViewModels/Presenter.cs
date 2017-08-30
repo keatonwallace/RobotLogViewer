@@ -38,7 +38,6 @@ namespace RobotLogViewer.ViewModels
         public void bOpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
             
-            //I don't think the field is being redrawn once the information is there
             _history.Add("something");
             //// Create an instance of the open file dialog box.
             //OpenFileDialog openFileDialog1 = new OpenFileDialog();
