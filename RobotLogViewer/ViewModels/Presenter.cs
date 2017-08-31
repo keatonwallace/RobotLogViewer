@@ -37,7 +37,7 @@ namespace RobotLogViewer.ViewModels
 
         public void bOpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
-            
+            //I might have to reevaluate how I do this
             _history.Add("something");
             //// Create an instance of the open file dialog box.
             //OpenFileDialog openFileDialog1 = new OpenFileDialog();
